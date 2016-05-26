@@ -1,0 +1,30 @@
+{
+  "name": "@mh-cbon/vagrant-pack",
+  "version": "1.0.0",
+  "description": "Tool to pack your local vagrant boxes to a tar.gz file",
+  "main": "index.js",
+  "bin": {
+    "vagrant-pack": "./bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "npm version patch -m \"patch %s\"",
+    "minor": "npm version minor -m \"minor %s\"",
+    "major": "npm version major -m \"major %s\"",
+    "preversion": "echo \"npm test: not defined\"",
+    "version": "echo \"npm run build: not defined\"",
+    "postversion": "git push && git push --tags && npm run public",
+    "public": "npm publish --access=public"
+  },
+  "keywords": [
+    "vagrant", "pack"
+  ],
+  "author": "mh-cbon <mh-cbon@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@mh-cbon/vagrant-box-list": "^1.0.1",
+    "cli-spinner": "^0.2.5",
+    "minimist": "^1.2.0",
+    "tar-fs": "^1.13.0"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@mh-cbon/vagrant-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tool to pack your local vagrant boxes to a tar.gz file",
   "main": "index.js",
   "bin": {
@@ -17,7 +17,8 @@
     "public": "npm publish --access=public"
   },
   "keywords": [
-    "vagrant", "pack"
+    "vagrant",
+    "pack"
   ],
   "author": "mh-cbon <mh-cbon@users.noreply.github.com>",
   "license": "MIT",
